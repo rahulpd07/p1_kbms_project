@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kitchen Basket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+
+
+
+    <nav class="navbar navbar-expand-lg bg-primary navbar-primary " data-bs-theme="primary">
+        <div class="container-fluid ">
+            <a class="navbar-brand fw-bolder fs-1" href="main.html"><img src="img/logo_kb.png" alt="" width="80px"
+                    style="border-radius: 50%;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#category">
+
+                            <!-- Button trigger modal -->
+
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" id="category">
+                                Shop by Category
+                            </button>
+
+                        </a>
+
+                        <!-- Modal pop down category of veg fruits spices -->
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content " style="height: 400px;">
+
+                                    <!--header for modal-->
+                                    <div class="modal-header bg-primary">
+                                        <h1 class="modal-title fs-3 " id="exampleModalLabel">Shop Category
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+
+                                    <!---body for modal-->
+                                    <div class="modal-body bg-dark">
+                                        <div class="container-fluid">
+                                            <div class="row">
+
+                                                <!---card for vegetable to connect to vegetable page -->
+                                                <a href="vegetable.html">
+                                                    <div class=" col-md-4 col-sm-12 card mb-3 h-75 w-25 position-absolute top-0"
+                                                        style="margin-top: 3%;margin-left: 3%; ">
+
+                                                        <!---card for vegess-->
+                                                        <div class="card-body"
+                                                            style="background-image: url(img/vije-vijendranath-26LFdL8exMo-unsplash.jpg); background-size:cover; ">
+                                                            <h5
+                                                                class="card-title text-dark fs-2 fw-bolder position-absolute top-0 start-0">
+                                                                VEGETABLES
+                                                            </h5>
+
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                                <!---card to connect fruit_html page -->
+                                                <a href="fruits.html">
+
+                                                    <div class=" col-md-4 col-sm-12 card mb-3  h-75 w-25  position-absolute top-0"
+                                                        style="margin-left: 35%;margin-top: 3%;">
+
+                                                        <!---cards for fruit -->
+                                                        <div class="card-body"
+                                                            style="background-image:url(img/tina-bach-WooBe_2VOcA-unsplash.jpg);background-size: cover;">
+                                                            <h5
+                                                                class="card-title text-dark fs-2 fw-bolder position-absolute top-0 start-0">
+                                                                FRUITS</h5>
+
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+
+
+                                                <!---card to connect spices_html page-->
+                                                <a href="spices.html">
+                                                    <div class=" col-md-4 col-sm-12 card mb-3 h-75 w-25  position-absolute top-0"
+                                                        style="margin-top: 3%;margin-left: 67%;">
+
+                                                        <!---cards for spices -->
+                                                        <div class="card-body"
+                                                            style="background-image:url(img/ratul-ghosh-NPrWYa69Mz0-unsplash.jpg);background-size: cover;">
+                                                            <h5
+                                                                class="card-title text-dark fs-2 fw-bolder position-absolute top-0 start-0">
+                                                                SPICES</h5>
+
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--footer modal include close button-->
+                                    <div class="modal-footer bg-primary">
+                                        <button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="modal">Close</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--basket button to jump on my basket page-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="basket.html">
+                            <button class="btn btn-dark" type="button">My
+                                Basket</button></a>
+                    </li>
+
+                    <!---for address button to choose address-->
+                    <div style="margin-top: 2.3%;">
+                        <li class="nav-item ">
+                            <label for="address">Address</label>
+                            <select class="bg-light text-dark" name="address" id="address" aria-placeholder="Address">
+                                <option value="mumbai">Mumbai</option>
+                                <option value="pune">Pune</option>
+                                <option value="delhi">Delhi</option>
+                                <option value="banglore">Banglore</option>
+                            </select>
+                        </li>
+                    </div>
+
+                    <!-- myorder button to jump on my my order page-->
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="orders.html">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-dark ">
+                                My Orders
+                            </button>
+                        </a>
+
+
+                    </li>
+                </ul>
+
+                <!--for search button-->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-dark" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--body page container for carousel for reponsive website-->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!---carousel for 4 slides -->
+            <div class="col-12">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000"
+                            style="height: 550px; background-size:contain;">
+                            <img src="img/carousal1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000"
+                            style="height: 550px; background-size:contain;">
+                            <img src="img/carousal2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000"
+                            style="height: 550px; background-size:contain;">
+                            <img src="img/carousal3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" style="height: 550px; background-size:contain;">
+                            <img src="img/carousal4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+
+                    <!---previous button in slides-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <!--next button in slides-->
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--container for responsive website for 3 cards-->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!--vegetable card with button for availability-->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card" style="width: 80%; margin-top: 8%;margin-left: 10%;">
+                    <img src="img/vije-vijendranath-26LFdL8exMo-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body bg-warning">
+                        <h5 class="card-title fw-bolder fs-1">Vegetables</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's content.</p>
+                        <a href="vegetable.html" class="btn btn-dark">Available Products</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--fruits card with button for availability-->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card" style="width: 80%; margin-top: 8%;margin-left: 10%;">
+                    <img src="img/julia-zolotova-M_xIaxQE3Ms-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body bg-warning">
+                        <h5 class="card-title fw-bolder fs-1">Fruits</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's content.</p>
+                        <a href="fruits.html" class="btn btn-dark">Available Products</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--spices card with button for availability-->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card" style="width: 80%; margin-top: 8%;margin-left: 10%;">
+                    <img src="img/ratul-ghosh-NPrWYa69Mz0-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body bg-warning">
+                        <h5 class="card-title fw-bolder fs-1">Spices</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's content.</p>
+                        <a href="spices.html" class="btn btn-dark">Available Products</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <hr style="color: white;">
+
+
+    <!---container for about info kitchen basket-->
+    <div class="conatainer-fluid " style="margin-top: 3%;">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10 border border-warning border-1">
+                <h2 class="text-warning s">Kitchen Basket-Online Grocery Store
+
+                </h2><br>
+                <h6 class="text-dark">Did you ever imagine that the freshest of fruits and vegetables, top quality
+                    pulses and food grains,
+                    dairy products and hundreds of branded items could be handpicked and delivered to your home, all at
+                    the click of a button? India’s first comprehensive online megastore, bigbasket.com, brings a
+                    whopping 20000+ products with more than 1000 brands, to over 4 million happy customers. From
+                    household cleaning products to beauty and makeup, bigbasket has everything you need for your daily
+                    needs. bigbasket.com is convenience personified We’ve taken away all the stress associated with
+                    shopping for daily essentials, and you can now order all your household products and even buy
+                    groceries online without travelling long distances or standing in serpentine queues. Add to this the
+                    convenience of finding all your requirements at one single source, along with great savings, and you
+                    will realize that bigbasket- India’s largest online supermarket, has revolutionized the way India
+                    shops for groceries. Online grocery shopping has never been easier. Need things fresh? Whether it’s
+                    fruits and vegetables or dairy and meat, we have this covered as well! Get fresh eggs, meat, fish
+                    and more online at your convenience. Hassle-free Home Delivery options</h6>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- about contact details -->
+    <div class="conatainers-fluid " style="margin-top: 2%;">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h4 class="text-warning">kitchen basket</h4><br>
+                <h4 class="text-dark">About Us</h4><br>
+                <h4 class="text-dark">Contact Us </h4>
+
+            <a href="mailto:pranitpatil262@gmail.com">
+                <h6> Mail</h6>
+                </a>
+                <h6 class="text-primary">9819172750</h6>
+                </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+    <!--some information of cities we serve and category-->
+    <hr style="color: white;">
+    <div class="conatainer-fluid " style="margin-top: 2%;">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h4 class="text-warning ">POPULAR CATEGORIES: </h4>
+                <h5 class="text-light">Vegetables, Fruits, Spices etc.</h5><br>
+                <h4 class="text-warning">CITIES WE SERVE:</h4>
+                <h5 class="text-light">Mumbai, Pune, Delhi, Banglore.</h5><br><br>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+
+    <!--JS links to connect bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
